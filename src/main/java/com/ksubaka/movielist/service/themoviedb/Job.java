@@ -1,0 +1,23 @@
+package com.ksubaka.movielist.service.themoviedb;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+class Job {
+
+    @JsonProperty
+    private String job;
+
+    @JsonProperty
+    private String name;
+
+    public String getJob() {
+        return job;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
